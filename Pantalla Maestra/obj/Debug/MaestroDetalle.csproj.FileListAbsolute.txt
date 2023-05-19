@@ -17,3 +17,21 @@ C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantall
 C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaCuotas.resources
 C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrComprarProducto.resources
 C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrPagarCuota.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe.config
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.pdb
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.AssemblyReference.cache
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrActualizarClientes.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrBorrarCliente.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrCrearClientes.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrComprarProducto.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrPagarCuota.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaClientes.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.Properties.Resources.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaCuotas.resources
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.GenerateResource.cache
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.CoreCompileInputs.cache
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.CopyComplete
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla Maestra.exe
+C:\Users\Julian\Source\Repos\MaestroDetalle\Pantalla Maestra\obj\Debug\Pantalla Maestra.pdb

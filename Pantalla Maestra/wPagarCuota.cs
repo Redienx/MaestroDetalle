@@ -33,6 +33,7 @@ namespace Pantalla_Maestra
             SQLiteConnection Conexion_sqlite;
             SQLiteCommand cmd_sqlite;
             SQLiteDataReader dataReader_sqlite;
+            
             // Establecer conexión a la base de datos
             Conexion_sqlite = new SQLiteConnection("Data Source=dbMercado.db;Version = 3; Compress= True");
             try
@@ -136,10 +137,12 @@ namespace Pantalla_Maestra
         {
             SQLiteConnection Conexion_sqlite;
             SQLiteCommand cmd_sqlite;
+            SQLiteCommand cmd1_sqlite;
             SQLiteCommand cmd2_sqlite;
             SQLiteCommand cmd3_sqlite;
             SQLiteCommand cmd4_sqlite;
             SQLiteDataReader dataReader_sqlite;
+            SQLiteDataReader dataReader1_sqlite;
             SQLiteDataReader dataReader2_sqlite;
 
             // Establecer conexión a la base de datos
@@ -154,6 +157,7 @@ namespace Pantalla_Maestra
             }
 
             cmd_sqlite = Conexion_sqlite.CreateCommand();
+            cmd1_sqlite = Conexion_sqlite.CreateCommand();
             cmd2_sqlite = Conexion_sqlite.CreateCommand();
             cmd3_sqlite = Conexion_sqlite.CreateCommand();
             cmd4_sqlite = Conexion_sqlite.CreateCommand();
@@ -168,6 +172,17 @@ namespace Pantalla_Maestra
             catch (Exception ex)
             {
                 MessageBox.Show("Los valores no pueden ser nulos. Por favor, llena todos los campos.");
+            }
+
+
+
+            cmd_sqlite.CommandText = $"SELECT ID_Clientes, ID_Productos FROM tblCuotas WHERE ID_Clientes = '{ID_Clientes}' AND ID_Productos = '{ID_Prductos}'";
+            dataReader_sqlite = cmd_sqlite.ExecuteReader();
+
+            if (dataReader_sqlite.Read() == false)
+            {
+                MessageBox.Show("Este Usuario no ha comprado este producto.");
+                return;
             }
 
             cmd_sqlite.CommandText = $"SELECT Valor_Producto FROM tblProducto WHERE ID = '{ID_Prductos}'";
@@ -185,31 +200,12 @@ namespace Pantalla_Maestra
             }
             catch (Exception ex) { MessageBox.Show("No Se encuentra el regristro"); }
 
-            if (NumeroCuota == CuotasTotales && Pago == TotalPagar)
-            {
-                MessageBox.Show("Pago Realizado.");
-                cmd3_sqlite.CommandText = $"INSERT INTO tblCuotas(ID_Clientes, ID_Productos, Cuotas_Totales, Cuotas_Pagadas, Cuotas_Restantes, Total_Pagado, Total_a_Pagar) VALUES('{ID_Clientes}', '{ID_Prductos}', '{CuotasTotales}', '{CuotasTotales}', '0', '{Pago}', '{TotalPagar}');";
-                cmd3_sqlite.ExecuteNonQuery();
-                Conexion_sqlite.Close();
+            CuotaRestante = CuotasTotales - NumeroCuota;
 
-                Limpiar_txt();
-            }
-            else if (NumeroCuota != CuotasTotales && Pago != TotalPagar)
-            {
-                MessageBox.Show("Pago Realizado.");
-
-                CuotaRestante = CuotasTotales - NumeroCuota;
-
-                cmd4_sqlite.CommandText = $"INSERT INTO tblCuotas(ID_Clientes, ID_Productos, Cuotas_Totales, Cuotas_Pagadas, Cuotas_Restantes, Total_Pagado, Total_a_Pagar) VALUES('{ID_Clientes}', '{ID_Prductos}', '{CuotasTotales}', '{NumeroCuota}', '{CuotaRestante}', '{Pago}', '{TotalPagar}');";
-                cmd4_sqlite.ExecuteNonQuery();
-                Conexion_sqlite.Close();
-
-                Limpiar_txt();
-            }
-            else
-            {
-                MessageBox.Show("Es la ultima cuota, Debe pagar todo lo que falta.");
-            }
+            cmd_sqlite.CommandText = $"INSERT INTO tblCuotas(ID_Clientes, ID_Productos, Cuotas_Totales, Cuotas_Pagadas, Cuotas_Restantes, Total_Pagado, Total_a_Pagar) VALUES('{ID_Clientes}', '{ID_Prductos}', {CuotasTotales}, {NumeroCuota}, {CuotaRestante}, {Pago}, {TotalPagar});";
+            cmd_sqlite.ExecuteNonQuery();
+            Conexion_sqlite.Close();
+            MessageBox.Show("Pago Realizado.");
             Limpiar_txt();
         }
         private void btnCancelar_Click(object sender, EventArgs e)

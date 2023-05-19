@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace Pantalla_Maestra
 {
+    /// <summary>
+    /// Formulario principal para mostrar una tabla de cuotas.
+    /// </summary>
     public partial class fmrTablaCuotas : Form
     {
         int indice = 0;
@@ -87,6 +90,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
+                    // Consultar los registros de cuotas por ID
                     string Consulta = "SELECT * from tblCuotas WHERE ID = " + txtBuscar.Text + "";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
@@ -106,6 +110,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
+                    // Consultar los registros de cuotas por ID de clientes
                     string Consulta = "SELECT * from tblCuotas WHERE ID_Clientes = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
@@ -125,6 +130,7 @@ namespace Pantalla_Maestra
             {
                 try
                 {
+                    // Consultar los registros de cuotas por ID de productos
                     string Consulta = "SELECT * from tblCuotas WHERE ID_Productos = '" + txtBuscar.Text + "'";
                     SQLiteDataAdapter dataAdapter_sqlite = new SQLiteDataAdapter(Consulta, Conexion_sqlite);
                     DataTable dt = new DataTable();
@@ -145,9 +151,6 @@ namespace Pantalla_Maestra
                 MessageBox.Show("Seleccione una opción");
             }
         }
-
-        // Evento que se activa Cuando una celda del datagridview cambia
-        
 
         // Evento que se activa al hacer clic en el botón "Siguiente"
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -173,24 +176,29 @@ namespace Pantalla_Maestra
                 MessageBox.Show("Llego al tope Maximo");
             }
         }
+
         private void btnPrimero_Click(object sender, EventArgs e)
         {
+            // Ir al primer registro en el DataGridView
             dtgCuotas.CurrentCell = dtgCuotas.Rows[0].Cells[dtgCuotas.CurrentCell.ColumnIndex];
         }
 
         private void btnUltimo_Click(object sender, EventArgs e)
         {
+            // Ir al último registro en el DataGridView
             dtgCuotas.CurrentCell = dtgCuotas.Rows[dtgCuotas.RowCount - 1].Cells[0];
         }
 
         private void btnComprarProducto_Click(object sender, EventArgs e)
         {
+            // Abrir el formulario para comprar un producto
             fmrComprarProducto fmrComprarProducto = new fmrComprarProducto();
             fmrComprarProducto.Show();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            // Abrir el formulario de la tabla de clientes y cerrar este formulario
             fmrTablaClientes fmrTablaClientes = new fmrTablaClientes();
             fmrTablaClientes.Show();
             this.Close();
@@ -198,12 +206,14 @@ namespace Pantalla_Maestra
 
         private void btnPagarCuota_Click(object sender, EventArgs e)
         {
+            // Abrir el formulario para pagar una cuota
             fmrPagarCuota fmrPagarCuota = new fmrPagarCuota();
             fmrPagarCuota.Show();
         }
 
         private void dtgCuotas_CurrentCellChanged(object sender, EventArgs e)
         {
+            // Actualizar el índice cuando cambia la celda actual en el DataGridView
             if (dtgCuotas.CurrentRow != null)
             {
                 indice = dtgCuotas.CurrentRow.Index;

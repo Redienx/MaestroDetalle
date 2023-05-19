@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace Pantalla_Maestra
 {
+    /// <summary>
+    /// Formulario para realizar la compra de un producto.
+    /// </summary>
     public partial class fmrComprarProducto : Form
     {
         int ID_Clientes, ID_Prductos, CuotasTotales, CuotasRestantes, PagoInicial, TotalPagar;
@@ -27,6 +30,11 @@ namespace Pantalla_Maestra
                 e.Handled = true;
             }
         }
+
+        /// <summary>
+        /// Evento que se activa al hacer clic en el botón "Comprar Productos".
+        /// Realiza la inserción de los datos de la compra en la base de datos.
+        /// </summary>
         private void btnComprarProductos_Click(object sender, EventArgs e)
         {
             SQLiteConnection Conexion_sqlite;
@@ -60,7 +68,7 @@ namespace Pantalla_Maestra
             {
                 MessageBox.Show("Los valores no pueden ser nulos. Por favor, llena todos los campos.");
             }
-            
+
             cmd_sqlite.CommandText = $"SELECT Valor_Producto FROM tblProducto WHERE ID = '{ID_Prductos}'";
             dataReader_sqlite = cmd_sqlite.ExecuteReader();
             try
@@ -71,7 +79,7 @@ namespace Pantalla_Maestra
                 }
             }
             catch (Exception ex) { MessageBox.Show("No Se encuentra el regristro"); }
-            
+
             CuotasRestantes = CuotasTotales - 1;
 
             // Ejecutar la consulta de inserción en la base de datos
@@ -81,7 +89,7 @@ namespace Pantalla_Maestra
             // Cerrar la conexión a la base de datos
             Conexion_sqlite.Close();
 
-            txtIDClientes.Text = null; 
+            txtIDClientes.Text = null;
             txtIDProductos.Text = null;
             txtCuotasTotales.Text = null;
             txtPagoInicial.Text = null;
@@ -89,6 +97,10 @@ namespace Pantalla_Maestra
             this.Close();
         }
 
+        /// <summary>
+        /// Evento que se activa al hacer clic en el botón "Cancelar".
+        /// Limpia los campos de texto y cierra el formulario.
+        /// </summary>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtIDClientes.Text = null;
