@@ -1,0 +1,19 @@
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe.config
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\bin\Debug\Pantalla Maestra.pdb
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\bin\Debug\SQLite.NET.dll
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.AssemblyReference.cache
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.SuggestedBindingRedirects.cache
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrActualizarClientes.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrBorrarCliente.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrCrearClientes.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaClientes.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.Properties.Resources.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.GenerateResource.cache
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.CoreCompileInputs.cache
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\MaestroDetalle.csproj.CopyComplete
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla Maestra.exe
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla Maestra.pdb
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaCuotas.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrComprarProducto.resources
+C:\Programacion\Ejercicios C#\Maestro_Detalle\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrPagarCuota.resources

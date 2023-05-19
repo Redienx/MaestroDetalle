@@ -1,0 +1,31 @@
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe.config
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\bin\Debug\Pantalla Maestra.pdb
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\bin\Debug\SQLite.NET.dll
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.AssemblyReference.cache
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.SuggestedBindingRedirects.cache
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaClientes.resources
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla_Maestra.Properties.Resources.resources
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.GenerateResource.cache
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.CoreCompileInputs.cache
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.CopyComplete
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.exe
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla Maestra.pdb
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrCrearClientes.resources
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrActualizarClientes.resources
+C:\Programacion\Ejercicios C#\Ejercicio_CRUD\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrBorrarCliente.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe.config
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\bin\Debug\Pantalla Maestra.exe
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\bin\Debug\Pantalla Maestra.pdb
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.AssemblyReference.cache
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrActualizarClientes.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrBorrarCliente.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrCrearClientes.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla_Maestra.fmrTablaClientes.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla_Maestra.Properties.Resources.resources
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.GenerateResource.cache
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.CoreCompileInputs.cache
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.csproj.CopyComplete
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.exe
+C:\Users\Julian\Source\Repos\Pantalla_Maestra\Pantalla Maestra\obj\Debug\Pantalla Maestra.pdb
