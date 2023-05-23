@@ -141,9 +141,9 @@ namespace Pantalla_Maestra
             while (dataReader2_sqlite.Read())
             {
                 lectura2 = int.Parse(dataReader2_sqlite.GetString(0));
+                lectura2 = lectura2 + 1;
             }
 
-            lectura2 = lectura2 + 1;
 
             // Mostrar el número de cuota actual en el campo de texto "NumeroCuota"
             txtNumeroCuota.Text = lectura2.ToString();
@@ -210,7 +210,7 @@ namespace Pantalla_Maestra
             }
 
             // Verificar si el cliente ha comprado el producto
-            cmd1_sqlite.CommandText = $"SELECT ID_Clientes, ID_Productos FROM tblCuotas WHERE ID_Clientes = '{ID_Clientes}' AND ID_Productos = '{ID_Prductos}'";
+            cmd1_sqlite.CommandText = $"SELECT ID_Clientes, ID_Productos, Cuotas_Totales FROM tblCuotas WHERE ID_Clientes = '{ID_Clientes}' AND ID_Productos = '{ID_Prductos}'";
             dataReader1_sqlite = cmd1_sqlite.ExecuteReader();
 
             if (dataReader1_sqlite.Read() == false)
@@ -222,14 +222,12 @@ namespace Pantalla_Maestra
             // Obtener el valor del producto y el total a pagar
             cmd_sqlite.CommandText = $"SELECT Valor_Producto FROM tblProducto WHERE ID = '{ID_Prductos}'";
             dataReader_sqlite = cmd_sqlite.ExecuteReader();
-            cmd2_sqlite.CommandText = $"SELECT Total_a_Pagar FROM tblCuotas WHERE ID_Clientes = '{ID_Clientes}' AND ID_Productos = '{ID_Prductos}';";
-            dataReader2_sqlite = cmd2_sqlite.ExecuteReader();
             try
             {
-                while (dataReader_sqlite.Read() && dataReader2_sqlite.Read())
+                while (dataReader_sqlite.Read() && dataReader1_sqlite.Read())
                 {
                     TotalPagar = int.Parse(dataReader_sqlite.GetString(0));
-                    CuotasTotales = int.Parse(dataReader2_sqlite.GetString(0));
+                    CuotasTotales = int.Parse(dataReader1_sqlite.GetString(0));
 
                 }
             }
